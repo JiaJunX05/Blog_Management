@@ -71,7 +71,7 @@
         
         <div class="mt-3 d-flex justify-content-between">
             <!-- Edit Button -->
-            <a href="{{ route('user.edit', $post->id) }}" class="btn btn-warning w-50 me-2">Edit</a> 
+            <a href="{{ route('updatePost', $post->id) }}" class="btn btn-warning w-50 me-2">Edit</a> 
         
             <!-- Delete Button -->
             <form action="{{ route('deletePost', $post->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this post?');" class="w-50">

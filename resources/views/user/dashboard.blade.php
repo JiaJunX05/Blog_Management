@@ -49,7 +49,7 @@
         
                         <!-- Card Footer -->
                         <div class="card-footer text-body-secondary mt-3 p-0">
-                            <a href="{{ route('user.view', $post->id) }}" class="btn btn-success w-100" style="border-radius: 0 0 8px 8px;">Read More</a>
+                            <a href="{{ route('viewPost', $post->id) }}" class="btn btn-success w-100" style="border-radius: 0 0 8px 8px;">Read More</a>
                         </div>
                     </div>
                 </div>

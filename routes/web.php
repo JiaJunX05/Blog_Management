@@ -24,12 +24,12 @@ Route::prefix('user')->group(function() {
         Route::post('/logout', [AuthController::class, 'logout'])->name('user.logout');
 
         Route::get('/dashboard', [PostController::class, 'dashboard'])->name('user.dashboard');
-        Route::get('/view/{id}', [PostController::class, 'viewPost'])->name('user.view');
+        Route::get('/view/{id}', [PostController::class, 'viewPost'])->name('viewPost');
 
-        Route::get('/create', [PostController::class, 'showCreateForm'])->name('user.create');
+        Route::get('/create', [PostController::class, 'showCreateForm'])->name('createPost');
         Route::post('/create', [PostController::class, 'create'])->name('user.create.submit');
 
-        Route::get('/edit/{id}', [PostController::class, 'showEditForm'])->name('user.edit');
+        Route::get('/edit/{id}', [PostController::class, 'showEditForm'])->name('updatePost');
         Route::put('/edit/{id}', [PostController::class, 'update'])->name('user.edit.submit');
 
         Route::delete('/delete/{id}', [PostController::class, 'destroy'])->name('deletePost');
