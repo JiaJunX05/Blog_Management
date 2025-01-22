@@ -17,9 +17,9 @@
 
     <!-- Welcome Section -->
     <div class="mb-5">
-        <h1 class="display-4 text-primary font-weight-bold">Welcome To My Blog</h1>
-        <p class="lead text-muted">Here you can read my latest posts and learn something new.</p>
-    </div> 
+        <h1 class="display-4 text-primary font-weight-bold">Welcome to Blog Tracks</h1>
+        <p class="lead text-muted">Manage your profile, track your posts, and connect with your audience.</p>
+    </div>    
     
     @if($posts->isEmpty())
         <p>No Posts available</p>

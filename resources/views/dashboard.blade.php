@@ -1,6 +1,6 @@
 @extends("layouts.app")
 
-@section("title", "User Panel")
+@section("title", "Guest Panel")
 @section("content")
 
 <!-- JQuery CDN -->
@@ -17,9 +17,9 @@
 
     <!-- Welcome Section -->
     <div class="mb-5">
-        <h1 class="display-4 text-primary font-weight-bold">Welcome To My Blog</h1>
-        <p class="lead text-muted">Here you can read my latest posts and learn something new.</p>
-    </div> 
+        <h1 class="display-4 text-primary font-weight-bold">Welcome to Blog Tracks</h1>
+        <p class="lead text-muted">Sharing the little moments, big experiences, and everything in between.</p>
+    </div>       
 
     @if($posts->isEmpty())
         <p>No Posts available</p>
